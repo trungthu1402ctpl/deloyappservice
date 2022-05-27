@@ -15,7 +15,7 @@ public class informationController {
     articleRepository rep;
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
-    @RequestMapping(value = "/author", method = RequestMethod.GET)
+    @RequestMapping(value = "/list-author", method = RequestMethod.GET)
     public String index() {
         long id = 1;
         article infor = rep.findById(id).get();
